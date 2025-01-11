@@ -1,0 +1,210 @@
+a{
+  text-decoration: none;
+}
+.product-list {
+   display: flex;
+   flex-wrap: wrap;
+    gap: 15px;
+    margin:30px 70px;
+  }
+  .product-category , .products-search{
+    margin-top: 100px;
+  }
+  .product-card {
+   width: 210px;
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: 60%;
+  }
+  
+  .product-card h3 {
+    margin: 10px 0;
+   
+    text-decoration: none;
+    font-size: 14px;
+  }
+  .product-card p{
+    color:  var(--ac-color);
+  }
+  .product-card button {
+   background-color: transparent;
+    color:  var(--ac-color);
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+   
+  }
+  .product-card .card-info{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+  }
+
+
+  /* Product Details */
+  .product-details img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+  }
+  
+  .reviews {
+    margin-top: 20px;
+  }
+  
+  .related-products {
+    margin-top: 40px;
+  }
+  
+  .product-details {
+   display: flex;
+   justify-content: center;
+   padding: 90px 100px;
+   margin-top: 30px;
+   gap: 20px;
+   height: 100vh;
+  }
+  
+  .main-image-div{
+    width: 450px;
+    height: 100vh;
+  }
+  .main-image {
+    width: 100%;
+   height: inherit;
+    margin-bottom: 20px;
+    
+    border-radius: 2px;
+  }
+  
+  .thumbnails {
+    
+   
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+  
+  }
+  
+  .thumbnail {
+    border: 2px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: border 0.3s ease;
+   width: 70px;
+   height: 70px;
+    
+  }
+  
+  .thumbnail.active {
+    border-color:  var(--ac-color); 
+  }
+  
+  .thumbnail-image {
+    width: 100%;
+    height: 100%;
+   
+    border-radius: 5px;
+  }
+  
+  .thumbnail:hover {
+    border-color: #333;
+  }
+  .products-info{
+    width: 400px;
+  }
+  .products-info p{
+    color: #333;
+  }
+  .products-info h3{
+    margin-top: 10px;
+    font-size: 30px;
+    height: 50%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  .btnAddCart{
+    background-color: var(--accent-color);
+    color:  var(--bg);
+    text-transform: uppercase;
+    padding: 10px 80px;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+   align-self: center;
+  }
+  .btns{
+    display: flex;
+    gap: 20px ;
+  }
+  .btns .icon-link{
+    font-size: 40px;
+  }
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .product-card {
+    width: 45%; 
+  }
+ .product-list.product-category , .product-list.products-search{
+    margin-top: 150px;
+  }
+
+  .product-details {
+    padding: 20px; 
+    flex-direction: column; 
+    align-items: center;
+    margin-top: 130px;
+  }
+
+  .main-image-div {
+    width: 100%; 
+    height: auto;
+  }
+
+  .thumbnails {
+    flex-direction: row; 
+    justify-content: center;
+    order: 1;
+  }
+
+  .products-info {
+    width: 100%; 
+    padding: 10px;
+    order: 2;
+  }
+
+  .btnAddCart {
+    width: 100%; 
+    padding: 12px 20px;
+  }
+
+  .product-list {
+    margin: 30px 20px; 
+  }
+}
+
+@media (max-width: 1024px) {
+  .product-card {
+    width: 45%; 
+  }
+
+  .product-details {
+    padding: 30px; 
+  }
+
+  .main-image-div {
+    width: 60%;
+  }
+
+  .products-info {
+    width: 50%; 
+  }
+}
